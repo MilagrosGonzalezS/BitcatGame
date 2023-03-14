@@ -1,0 +1,157 @@
+@import "./style.scss";
+
+.down-page {
+  display: flex;
+  align-items: center;
+  padding-top: 9em;
+  min-height: 100vh;
+  background-image: url("/imgs/register-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+}
+
+.computer-img img{
+    width:100%;
+}
+
+.download-links-container {
+    width: 40%;
+    margin-left: 8em;
+
+    & h2 {
+    font-size: 8em;
+    font-family: var(--ff-accent);
+    color: var(--clr-accent);
+    line-height: 1;
+    margin-bottom: .5em;
+    }
+
+    & div {
+        margin-bottom: 7em;
+    }
+
+    & div span {
+        font-weight: 700;
+        margin-left: 5px;
+    }
+
+
+    & div > button{
+        border: solid 3px var(--clr-light);
+        border-radius: 12px;
+        background-color:unset;
+        padding:.4em 1.1em;
+        margin: 1em 1.7em 1em 0;
+        cursor: pointer;
+        transition: all 0.7s ease-in-out;
+    }
+
+    & div > button:hover {
+        transform: scale(1.1);
+    }
+
+    & #gray {
+        background-color: #706e6e;
+        border-color: #5c5a5a;
+        cursor:none;
+    }
+
+    & #gray a {
+        color:#2c2c2c;
+         cursor:default;
+    }
+
+    #gray:hover {
+        transform: scale(1);
+    }
+
+    & div > button > a {
+        text-decoration: none;
+        color: var(--clr-light);
+        display: flex;
+        align-items: center;
+        font-family: var(--ff-primary);
+        font-size:2.2em;
+    }
+
+    & div > button > a > img {
+        width: 25px;
+        margin-right: .3em;
+    }
+}
+
+@media screen and (min-width: 980px) and (max-width: 1366px) {
+    .download-links-container  {
+    width:50%;
+    margin-left: 6em;
+
+    & h2 {
+        font-size: 5.5em;
+    }
+    
+
+    & div > button > a {
+        font-size:1.7em;
+    }
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 979px) {
+    .download-links-container  {
+    width:45%;
+    margin-left: 6em;
+
+    & h2 {
+        font-size: 4.5em;
+    }
+    
+
+    & div > button > a {
+        font-size:1.4em;
+    }
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .download-links-container  {
+    width:65%;
+    margin: 0 auto;
+    text-align: center;
+
+    & h2 {
+        font-size: 6em;
+    }
+    
+
+    & div > button > a {
+        font-size:1.8em;
+    }
+    }
+
+    .computer-img {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .download-links-container  {
+    width:80%;
+    margin: 0 auto;
+    text-align: center;
+
+    & h2 {
+        font-size: 4em;
+    }
+    
+
+    & div > button > a {
+        font-size:1.3em;
+    }
+    }
+
+    .computer-img {
+        display: none;
+    }
+}
